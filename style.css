@@ -1,0 +1,381 @@
+body {
+    background-color: #A7D8FF;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #304C89;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -2px;
+}
+
+p {
+    color: #405A75;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.welcome-card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 15px auto;
+    max-width: 600px;
+    box-shadow: 0 8px 25px #729CC0;
+}
+
+.search-container {
+    margin-top: 15px;
+}
+
+input {
+    width: 80%;
+    max-width: 700px;
+    padding: 20px;
+    font-size: 20px;
+    border: 2px solid #C8B6FF;
+    border-radius: 30px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+input:hover {
+    box-shadow: 0px 0px 12px #C8B6FF;
+}
+
+.apps {
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.app-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.app-card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.app-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px #729CC0;
+}
+
+.app-card h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.app-card p {
+    font-size: 16px;
+    color: #64748B;
+}
+
+.app-card svg {
+    width: 36px;
+    height: 36px;
+    color: #7B61A8;
+}
+
+.main-layout {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+    width: 95%;
+    max-width: 1400px;
+    margin: 20px auto;
+}
+
+.left-apps,
+.right-apps {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.left-apps .app-card,
+.right-apps .app-card {
+    width: 100%;
+    height: auto;
+    min-height: 120px;
+    box-sizing: border-box;
+}
+
+.academy-card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 15px;
+    margin-top: 15px;
+    text-align: center;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.academy-card p {
+    text-align: center;
+    font-size: 22px;
+    line-height: 1.6;
+    max-width: 400px;
+    margin: 15px auto;
+}
+
+.academy-card h3 svg {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.academy-card h3 {
+    font-size: 26px;
+}
+
+/* Compact Wavo homepage */
+
+.app-card {
+    padding: 12px;
+    min-height: 0;
+    height: auto;
+}
+
+.app-card svg {
+    width: 28px;
+    height: 28px;
+}
+
+.app-card h3 {
+    font-size: 18px;
+    margin: 6px 0;
+}
+
+.app-card p {
+    font-size: 13px;
+    margin: 4px 0;
+}
+
+.academy-card {
+    min-height: 0;
+    padding: 14px;
+}
+
+.academy-card h3 {
+    font-size: 18px;
+    margin: 4px 0;
+}
+
+.academy-card p {
+    font-size: 13px;
+    line-height: 1.4;
+    margin: 6px auto;
+}
+
+.left-column,
+.right-column,
+.center-column {
+    gap: 10px;
+}
+
+/* Two widgets side by side */
+.wavo-widgets {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Widget cards */
+.wavo-widget {
+    background: white;
+    border-radius: 20px;
+    padding: 12px;
+    text-align: center;
+    min-width: 0;
+}
+
+.wavo-widget h3 {
+    font-size: 15px;
+    margin: 5px 0;
+}
+
+.wavo-widget p {
+    font-size: 12px;
+    color: #758096;
+    margin: 4px 0;
+}
+
+.blob-face {
+    width: 55px;
+    height: 55px;
+    background: #8DCEFF;
+    border: 2px solid #5B9BD5;
+    border-radius: 58% 42% 63% 37% / 45% 55% 45% 55%;
+    margin: 0 auto 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #304A6E;
+}
+
+.blob-eyes {
+    font-size: 15px;
+    letter-spacing: 5px;
+}
+
+.blob-mouth {
+    font-size: 22px;
+    line-height: 14px;
+}
+
+.more-apps-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 6px;
+    margin-top: 8px;
+}
+
+.more-apps-grid a {
+    background: #F4F0FF;
+    border-radius: 10px;
+    padding: 4px 1px;
+    text-decoration: none;
+    color: #333D57;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.more-apps-grid a:hover {
+    background: #E7DFFF;
+}
+
+.more-apps-grid svg {
+    width: 19px;
+    height: 19px;
+}
+
+.wavo-widget h3 svg {
+    width: 17px;
+    height: 17px;
+    vertical-align: middle;
+}
+
+.wavo-blob {
+    width: 42px;
+    height: 42px;
+    margin-bottom: 2px;
+}
+
+.wavo-widget {
+    padding: 6px;
+}
+
+.wavo-widget h3 {
+    font-size: 14px;
+    margin: 3px 0;
+}
+
+.wavo-widget p {
+    font-size: 11px;
+    margin: 2px 0;
+}
+
+.middle-section {
+    gap: 8px;
+}
+
+#wavo-speech:not([hidden]) {
+    background: #F0F7FF;
+    color: #42689A;
+    padding: 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    margin-top: 8px;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 180px;
+    z-index: 10;
+    box-sizing: border-box;
+    animation: fadeIn 0.5s ease,
+        fadeOut 0.5s ease 5.5s;
+}
+
+#wavo-character {
+    position: relative;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+.fade-out {
+    animation: fadeOut 0.5s ease forwards;
+}
+
+.wavo-blob {
+    transition: transform 1s ease;
+}
+
+.wavo-blob.flying {
+    transform: translateX(100px);
+}
+
+#wavo-flyer {
+    position: relative;
+    transition: transform 1s ease;
+    z-index: 20;
+}
+
+.home-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #304f8c;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0;
+}
+
+.home-button {
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+}
